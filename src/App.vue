@@ -1,9 +1,10 @@
 <template>
-  <HomeView />
+  <the-nav />
+  <router-view />
 </template>
 
 <script setup>
-import HomeView from '~/views/HomeView'
+import TheNav from '~/components/TheNav'
 </script>
 
 <style scoped>

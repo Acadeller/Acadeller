@@ -44,9 +44,4 @@ const router = createRouter({
   routes,
 })
 
-/*router.beforeEach((to, from, next) => {
-    document.title = `${to.meta.title} | Acadeller`
-    next()
-})*/
-
 export default router

@@ -11,8 +11,8 @@ module.exports = {
         colors: {
             ...colorsDefault,
             "midnight": "#18202b",
-            "primary": "#fc0"
+            "acadeller": "#fc0"
         },
     },
-    plugins: [],
+    plugins: [require("daisyui")],
 }

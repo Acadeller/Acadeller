@@ -7,6 +7,7 @@
 :root {
     font-family: 'Poppins', sans-serif;
     color: rgba(255, 255, 255, 0.87);
+    background-color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

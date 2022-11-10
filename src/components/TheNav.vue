@@ -1,10 +1,3 @@
-<script setup>
-import { useDark, useToggle } from '@vueuse/core'
-
-const isDark = useDark()
-const toggleDark = useToggle(isDark)
-</script>
-
 <template>
 	<nav class="relative bg-white shadow dark:bg-gray-800">
 		<div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
@@ -66,6 +59,10 @@ const toggleDark = useToggle(isDark)
 
 <script>
 export default {
+    props: {
+        isDark: Boolean
+    },
+
 	data() {
     	return {
         	isOpen: false
@@ -80,6 +77,12 @@ export default {
 		linkActiveClass() {
 			return "text-gray-800 font-medium transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-gray-400 mx-1.5 sm:mx-6"
 		},
-	}
+	},
+
+    methods: {
+        toggleDark() {
+            this.$emit("toggle-dark")
+        }
+    }
 }
 </script>
